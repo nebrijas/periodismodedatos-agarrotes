@@ -1,3 +1,3 @@
 # PERIODISMO DE DATOS II: HERRAMIENTAS DIGITALES PARA LA VISUALIZACIÓN Y PRESENTACIÓN DE DATOS
 
-Estamos en la clase del día 22 de marzo de 2022
+Estamos en la clase del día 22 de marzo de 2022.
