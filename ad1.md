@@ -2,12 +2,7 @@
 
 ## Comentario crítico: Infografía de los principales socios comerciales y productos de Ucrania
 
-```from PIL import Image
-import requests
-from io import BytesIO
-
-response = requests.get(https://www.visualcapitalist.com/wp-content/uploads/2022/03/UkrainTrade-Infographic-9.jpg)
-img = Image.open(BytesIO(response.content))```
+!(https://www.visualcapitalist.com/wp-content/uploads/2022/03/UkrainTrade-Infographic-9.jpg)
 
 La siguiente infografía que analizaremos muestra los principales socios comerciales y productos de Ucrania, la cuál (~a~) fue publicada el pasado 3 de marzo de 2022 en el editor en línea canadiense **Visual Capitalist** (¿Enlace?), que está centrado en temas de mercados, tecnología, energía y economía global. 
 
