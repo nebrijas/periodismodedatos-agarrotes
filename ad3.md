@@ -52,9 +52,15 @@ Tras este primer paso, en el caso de España hicimos uso de diferentes funciones
 - ```df_es.set_index('Date')['Cases'].plot(title='Casos de Covid19 en España')```: Esta función sirve para lo mismo que la mencionada previamente, pero en este caso, se le añade el título "Casos de Covid19 en España" a dicho gráfico.
 
 ## Tiempo real Colombia
-Al igual que 
+Al igual que el paso anterior, en este lo que queremos que es la información que se muestre en tiempo real de la evolución de la pandemia sea solo en Colombia, por lo que se definirá una [URL](https://api.covid19api.com/country/colombia/status/confirmed/live "Datos Colombia") diferente a la previamente establecida, llamada ```url_co```.
+
+Asimismo, estableceremos la orden ```df_co``` en la que se obtendrá la información relativa a Colombia a través de la estrucutra de datos Data Frame, haciendo uso de la función: ```df_co = pd.read_json(url_co)```. 
+
+Finalmente, haremos uso de la función ```df_co.set_index('Date')['Cases'].plot(title='Casos de Covid19 en Colombia')``` para que se muestre la columna **"Date"** como índice de la tabla y que después aparezca la información relativa a los **"Cases"**, y toda esta información se dibuje en un gráfico a través de la orden ```.plot()``` con el título de "Casos de Covid19 en Colombia".
+
 
 ## Comparativa España-Colombia
+En este apartado, 
 
 ## Triple comparativa España-Colombia-Argentina
 
