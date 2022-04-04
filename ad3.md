@@ -60,11 +60,25 @@ Finalmente, haremos uso de la función ```df_co.set_index('Date')['Cases'].plot(
 
 
 ## Comparativa España-Colombia
-En este apartado, 
+En este apartado, comparemos la información en tiempo real de la evolución de la pandemia en España y en Colombia. Para ello, definiremos la función ```df_es.set_index('Date')['Cases']``` como ```casos_es``` en el caso de España y la función ```df_co.set_index('Date')['Cases']``` como ```casos_co``` para los datos de Colombia.
+
+Para poder hacer la comparación de ambos dataframes a lo largo de la fila ```axis = 1```, debemos hacer uso de la siguiente función: ```pd.concat([casos_es,casos_co],axis=1)``` y la definiremos como ```vs```. Tras este paso, simplemente introduciremos la orden ```vs``` para que nos imprima la tabla comparativa de ambos países.
+
+Como en ambas columnas aparecían tituladas bajo el nombre de **"Cases"**, a través de la función ```vs.columns = ['España', 'Colombia']``` diferenciamos ambos títulos, estableciendo para la primera columna el nombre de España y para la segunda, Colombia.
+
+Finalmente, con el objetivo de poder visualizar esta comparativa en un gráfico, estableceremos la siguiente función: ```vs.plot(title='España vs Colombia',kind='area')```. El método plot de Pandas tiene un parámetro kind que nos ayuda a cambiar el tipo de gráfico que queremos dibujar, que en este caso será el de tipo área.
 
 ## Triple comparativa España-Colombia-Argentina
+En este apartado, comparemos la información en tiempo real de la evolución de la pandemia en España, en Colombia y Argentina. Para ello, definiremos la función ```df_es.set_index('Date')['Cases']``` como ```casos_es``` en el caso de España, la función ```df_co.set_index('Date')['Cases']``` como ```casos_co``` para los datos de Colombia y la función de ```df_ag.set_index('Date')['Cases']```como ```casos_ag```.
+
+Para poder hacer la concatenación de los tres dataframes a lo largo de la fila ```axis = 1```, debemos hacer uso de la siguiente función: ```pd.concat([casos_es,casos_co,casos_ag],axis=1)``` y la definiremos como ```vs2```. Tras este paso, simplemente introduciremos la orden ```vs2``` para que nos imprima la tabla comparativa de los tres países.
+
+Como las tres columnas aparecían tituladas bajo el nombre de **"Cases"**, a través de la función ```vs.columns = ['España', 'Colombia', 'Argentina']``` diferenciamos ambos títulos, estableciendo para la primera columna el nombre de España, la segunda el de Colombia y la tercerda el de Argentina.
+
+Finalmente, con el objetivo de poder visualizar esta comparativa en un gráfico, estableceremos la siguiente función: ```vs2.plot(title='España, Colombia y Argentina')```. El método plot de Pandas le pondremos el título de "España, Colombia y Argentina".
 
 ## Seleccionar más columnas
+
 
 ## Exportar datos
 
