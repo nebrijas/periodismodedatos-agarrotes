@@ -2,7 +2,7 @@
 
 En esta actividad dirigida hemos realizado unos ejercicios colectivos de Web Scraping sobre la tabla de [El medallero de Tokio 2020](https://resultados.elpais.com/deportivos/juegos-olimpicos/medallero/ "Tabla Tokio 2020") de la edición digital del diario español [El País](https://elpais.com/ "El País").
 
-Para obtener toda la información hemos usado el siguiente código que aparece debajo y hemos llevado a cabo una serie de pasos que están explicados en el notebook [scraping.ipynb](https://github.com/nebrijas/periodismodedatos-agarrotes/blob/main/scraping.ipynb "scraping.ipynb")
+Para obtener toda la información hemos usado el siguiente código que aparece debajo y hemos llevado a cabo una serie de pasos que están explicados en el notebook [scraping.ipynb](scraping.ipynb "scraping.ipynb") y además aquí puedes observarlo en html [scraping.html](scraping.html "scraping.html")
 
 
 ```
